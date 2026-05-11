@@ -1,0 +1,8 @@
+-- Connect to your existing container (port 1522) and run:
+SELECT username FROM all_users
+WHERE username NOT IN ('SYS','SYSTEM','DBSNMP','APPQOSSYS','AUDSYS',
+                       'CTXSYS','DVSYS','GSMADMIN_INTERNAL','LBACSYS',
+                       'MDSYS','OJVMSYS','OLAPSYS','ORDPLUGINS','ORDSYS',
+                       'OUTLN','SI_INFORMTN_SCHEMA','SPATIAL_CSW_ADMIN_USR',
+                       'SPATIAL_WFS_ADMIN_USR','WMSYS','XDB','XS$NULL')
+ORDER BY username;
